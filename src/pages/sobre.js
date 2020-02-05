@@ -1,9 +1,10 @@
 import React from "react"
 import Header from "../components/header";
+import Container from '../components/container';
 import { Link } from "gatsby"
 
 export default () => 
-<div>
+<Container>
     <Header title="Sobre" />
 	
     <p>
@@ -11,4 +12,4 @@ export default () =>
     </p>
 
     <Link to="/">Home</Link>
-</div>
+</Container>
