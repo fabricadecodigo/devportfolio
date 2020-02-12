@@ -1,17 +1,30 @@
 import React from "react"
 import Header from "../components/header";
 import Container from '../components/container';
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
-export default () =>
+export default ({ data }) =>
     <Container>
-        <Header title="Home" />
+        <Header title={data.site.siteMetadata.homePage.title} />
 
         <p>
             <Link to="sobre">
-                <img src="https://source.unsplash.com/800x500/?javascript" alt="" />
+                <img src={data.site.siteMetadata.homePage.img} alt="" />
             </Link>
         </p>
 
         <Link to="sobre">Sobre</Link>
     </Container>
+
+export const query = graphql`
+  {
+    site {
+      siteMetadata {
+        homePage {
+          img
+          title
+        }
+      }
+    }
+  }
+`
