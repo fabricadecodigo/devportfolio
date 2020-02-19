@@ -14,6 +14,8 @@ export default ({ data }) =>
         </p>
 
         <Link to="sobre">Sobre</Link>
+        <br />
+        <Link to="projetos">Projetos</Link>
     </Container>
 
 export const query = graphql`

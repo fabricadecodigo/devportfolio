@@ -16,5 +16,15 @@ module.exports = {
       img: 'https://images.unsplash.com/photo-1569693799105-4eb645d89aea?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=800'
     }
   },
-  plugins: [`gatsby-plugin-sass`]
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    'gatsby-transformer-remark'
+  ]
 }
