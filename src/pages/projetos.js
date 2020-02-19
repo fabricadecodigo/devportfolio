@@ -11,9 +11,13 @@ export default ({ data }) => {
 
             {edges.map(({ node }) => (
                 <div key={node.id}>
-                    <h2>{node.frontmatter.title}</h2>
+                    
+                    <Link to={node.fields.slug}>
+                      <h2>{node.frontmatter.title}</h2>
+                    </Link>
+
                     <small>{node.frontmatter.date}</small>
-                    <div dangerouslySetInnerHTML={ { __html: node.html } }></div>
+                    <div>{node.excerpt}</div>
                 </div>
             ))}
 
@@ -28,7 +32,10 @@ export const query = graphql`
       edges {
         node {
           id
-          html
+          excerpt
+          fields {
+            slug
+          }
           frontmatter {
             date(formatString: "DD/MM/YYYY")
             title
