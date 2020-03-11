@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-
-.title {
-    color: $red;
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/bg-header.jpg");
+  @apply bg-cover text-white p-5;
 }
