@@ -1,3 +1,19 @@
-h1 {
-    text-align: center;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.btn {
+  @apply inline-block rounded-full px-10 py-2;
+}
+
+.btn-xl {
+  @apply text-xl;
+}
+
+.btn-outline-light {
+  @apply border-white border-solid border;
+}
+
+.btn-outline-light:hover {
+  @apply bg-white text-black;
 }

@@ -6,6 +6,33 @@
 
 module.exports = {
   siteMetadata: {
+    presentation: {
+      hi: 'Olá, Eu sou o',
+      name: 'Felipe Franco',
+      title: 'Desenvolvedor full stack com experiência em todos os aspectos do ciclo de vida de desenvolvimento de software',
+      socialMedia: [
+        {
+          name: 'github',
+          link: 'https://github.com/fabricadecodigo'
+        },
+        {
+          name: 'instagram',
+          link: 'https://www.instagram.com/fabricadecodigo/'
+        },
+        {
+          name: 'youtube',
+          link: 'http://youtube.com.br/fabricadecodigo'
+        },
+        {
+          name: 'linkedin',
+          link: 'https://www.linkedin.com/in/feliperfranco/'
+        },
+        {
+          name: 'twitter',
+          link: 'https://twitter.com/fabricadecodigo'
+        }
+      ]
+    },
     footerText: 'Fábrica de Código',
     homePage: {
       title: 'Página Inicial',
@@ -17,7 +44,14 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          require("tailwindcss")
+        ]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
