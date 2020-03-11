@@ -17,3 +17,13 @@
 .btn-outline-light:hover {
   @apply bg-white text-black;
 }
+
+.section-portfolio-item {
+  @apply py-10 px-5
+}
+
+@screen md {
+  .section-portfolio-item {
+    @apply px-24;
+  }
+}
