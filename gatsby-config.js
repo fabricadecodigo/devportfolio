@@ -44,6 +44,25 @@ module.exports = {
       trabalho.`,
       photoUrl: 'https://pt.gravatar.com/userimage/9719393/0d8d6806fb996d79982e7af82653ef51.png?size=200'
     },
+    jobs: [
+      {
+        date: '05/2013 - atual',
+        company: 'Thomson Reuters',
+        role: 'Desenvolvedor Sênior',
+        description: `<p>Atuo na criação de uma plataforma para software jurídico desenvolvendo
+        novas features, correções de bugs e ajudando tecnicamente todos os times
+        (Desenvolvimento, Qualidade, Especificação e Analistas de requisitos).</p>
+        <p><strong>Tecnologias: </strong>HTML, CSS, JavaScript, C#, ASP NET MVC, ASP.NET Web API, .Net Core, Angular, SQL Server e Scrum.</p>`
+      },
+      {
+        date: '09/2009 - 05/2013',
+        company: 'CEOsoftware',
+        role: 'Desenvolvedor .Net',
+        description: `<p>Desenvolvimento de novas features, correções de bugs e melhorias em geral para mobile, web e desktop. </p>
+        <p><strong>Tecnologias: </strong>HTML, CSS, JavaScript, VB.NET, ASP NET Web Forms, ASP NET Windows Forms, 
+        ASP.NET Soap web service, SQL Server, Windows Mobile e Android.</p>`
+      }
+    ],
     footerText: 'Fábrica de Código',
     homePage: {
       title: 'Página Inicial',
