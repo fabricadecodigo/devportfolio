@@ -1,0 +1,46 @@
+.timeline-container {
+  @apply flex flex-col my-5;
+}
+
+.timeline-item-date {
+  @apply hidden;
+}
+
+@screen md {
+  .timeline {
+    @apply bg-black absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+  }
+
+  .timeline-icon {
+    @apply bg-black rounded-full border-2 border-gray-700 w-4 h-4 relative;
+    left: 49.4%;
+    top: 40px;
+  }
+
+  .timeline-container {
+    @apply flex flex-row my-0;
+  }
+
+  .timeline-item {
+    @apply w-2/4;
+  }
+
+  .timeline-item-date {
+    @apply block p-5;
+  }
+
+  .timeline-item-description {
+    @apply block px-5 py-8;
+  }
+
+  .timeline-item-left .timeline-item-date {
+    @apply flex items-start justify-end;
+  }
+
+  .timeline-item-right .timeline-item-description {
+    @apply text-right;
+  }
+}
