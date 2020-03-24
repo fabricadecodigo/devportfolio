@@ -1,0 +1,39 @@
+.project-container {
+  @apply bg-white border border-gray-700 mx-auto my-5 p-2 rounded shadow-md;
+}
+
+.project-image-container {
+  @apply mx-auto mb-5;
+  max-width: 187px;
+}
+
+.project-info-container .title {
+  @apply mb-2 font-bold;
+}
+
+.project-info-container .technologies {
+  @apply flex flex-wrap my-2 justify-center;
+}
+
+.project-info-container .technologies li {
+  @apply mr-3 bg-gray-700 rounded-full px-4 py-1 text-white my-2 text-sm;
+}
+
+@screen md {
+  .project-container {
+    @apply flex max-w-screen-sm mt-5 p-5;
+  }
+
+  .project-image-container {
+    @apply mb-0;
+    min-width: 187px;
+  }
+
+  .project-info-container {
+    @apply ml-5;
+  }
+
+  .project-info-container .technologies {
+    @apply justify-start;
+  }
+}
