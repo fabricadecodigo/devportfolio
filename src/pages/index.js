@@ -10,5 +10,5 @@ export default () =>
     <Header />
     <About />
     <Jobs />
-    <Projects />
+    <Projects limit="2" />
   </Container>
