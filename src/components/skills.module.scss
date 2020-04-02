@@ -1,0 +1,7 @@
+.container {
+    @apply flex flex-wrap;    
+}
+
+.container > div {
+    @apply w-2/4 px-2;
+}
