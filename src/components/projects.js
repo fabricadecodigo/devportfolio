@@ -1,50 +1,44 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Section from './section';
-import styles from './projects.module.scss'
+import Project from './project';
 
-const Projects = () => {
+const Projects = (props) => {
   const data = useStaticQuery(graphql`
     {
-      site {
-        siteMetadata {
-          projects {
-            description
-            img
-            title
-            technologies
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            id
+            frontmatter {
+              title
+              date
+              img
+              techs
+            }
+            html
           }
         }
       }
     }
   `)
 
-  const top = 3;
-  const projects = data.site.siteMetadata.projects.slice(0, top);
+  const top = props.limit ? props.limit : data.allMarkdownRemark.edges.length;
+  const projects = data.allMarkdownRemark.edges.slice(0, top);
   return (
     <Section id="projects" className="bg-gray-100" title="Projetos pessoais que trabalhei">
-      {projects.map((project, index) => (
-        <div key={index} className={styles.projectContainer}>
-
-          <div className={styles.projectImageContainer}>
-            <img src={project.img} />
-          </div>
-
-          <div className={styles.projectInfoContainer}>
-            <h3 className={styles.title}>{project.title}</h3>
-            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
-            <ul className={styles.technologies}>
-              {project.technologies.map((technologie, indexTech) => (
-                <li key={indexTech}>{technologie}</li>
-              ))}
-            </ul>
-          </div>
-        </div >
+      {projects.map(({ node }) => (
+         <Project key={node.id} project={node} />
       ))}
 
-      {data.site.siteMetadata.projects.length > top &&
+      {data.allMarkdownRemark.edges.length > top &&
         <div className="text-center">
-          <a href="#" className="btn btn-primary">Ver todos</a>
+          <Link to="projetos" className="btn btn-primary">
+            Ver todos
+          </Link>
         </div>}
 
     </Section >

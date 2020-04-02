@@ -8,7 +8,10 @@
 }
 
 .project-info-container .title {
-  @apply mb-2 font-bold;
+  @apply mb-1 font-bold;
+}
+.project-info-container .date {
+  @apply inline-block mb-4;
 }
 
 .project-info-container .technologies {
