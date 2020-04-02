@@ -1,32 +1,33 @@
 import React from "react"
 import Header from "../components/header";
 import Container from '../components/container';
-import { Link } from "gatsby"
+import Project from '../components/project';
 
 export default ({ data }) => {
-    const projeto = data.markdownRemark;
+  const project = data.markdownRemark;
 
-    return (        
-        <Container>
-            <Header title={projeto.frontmatter.title} />
-            <small>{projeto.frontmatter.date}</small>
-
-            <div dangerouslySetInnerHTML={{ __html: projeto.html }}></div>
-
-            <Link to="projetos">Projetos</Link>
-        </Container>
-    )
+  return (
+    <Container>
+      <Header />
+      <Project project={project} />
+    </Container>
+  )
 }
 
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "DD/MM/YYYY")
         title
+        img
+        techs
       }
       html
+      id
     }
   }
 `

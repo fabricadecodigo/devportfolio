@@ -63,35 +63,7 @@ module.exports = {
         ASP.NET Soap web service, SQL Server, Windows Mobile e Android.</p>`
       }
     ],
-    projects: [
-      {
-        title: 'HandsOn Ionic 4 para iniciantes',
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus urna ac lectus maximus, nec hendrerit turpis consequat. 
-        Aenean porta tincidunt neque a vulputate. Nullam at sapien mollis, pellentesque sapien sed, porta ex. Nam vitae ultrices ligula. Vivamus 
-        justo nulla, ullamcorper ac fermentum eget, convallis nec ligula. In elementum laoreet tempor. Vivamus convallis nibh et vulputate efficitur. 
-        Nam pellentesque ex in feugiat molestie.`,
-        technologies: ['Ionic', 'Html', 'CSS', 'JavaScript'],
-        img: 'http://www.fabricadecodigo.com/wp-content/uploads/elementor/thumbs/app-todo-com-ionic-ogd6rpbwgkg8mbyll61x8ez2zohiqvp8xbg4eysni8.png'
-      },
-      {
-        title: 'HandsOn Ionic e SQLite',
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus urna ac lectus maximus, nec hendrerit turpis consequat. 
-        Aenean porta tincidunt neque a vulputate. Nullam at sapien mollis, pellentesque sapien sed, porta ex. Nam vitae ultrices ligula. Vivamus 
-        justo nulla, ullamcorper ac fermentum eget, convallis nec ligula. In elementum laoreet tempor. Vivamus convallis nibh et vulputate efficitur. 
-        Nam pellentesque ex in feugiat molestie.`,
-        technologies: ['Ionic', 'Html', 'CSS', 'JavaScript'],
-        img: 'http://www.fabricadecodigo.com/wp-content/uploads/elementor/thumbs/app-lista-de-compras-com-ionic-ogd6rlkjp8b3bw4274feyfx8m501w3abksu6huy874.png'
-      },
-      {
-        title: 'HandsOn Ionic e APIs REST',
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus urna ac lectus maximus, nec hendrerit turpis consequat. 
-        Aenean porta tincidunt neque a vulputate. Nullam at sapien mollis, pellentesque sapien sed, porta ex. Nam vitae ultrices ligula. Vivamus 
-        justo nulla, ullamcorper ac fermentum eget, convallis nec ligula. In elementum laoreet tempor. Vivamus convallis nibh et vulputate efficitur. 
-        Nam pellentesque ex in feugiat molestie.`,
-        technologies: ['Ionic', 'Html', 'CSS', 'JavaScript'],
-        img: 'http://www.fabricadecodigo.com/wp-content/uploads/elementor/thumbs/app-agendamento-de-servi%C3%A7os-com-ionic-ogd6rir14q78d285nl7j8ymutzdy8zz4kevq212eps.png'
-      }
-    ],
+    projects: [],
     footerText: 'Fábrica de Código',
     homePage: {
       title: 'Página Inicial',
