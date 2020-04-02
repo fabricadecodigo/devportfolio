@@ -23,7 +23,7 @@
 }
 
 .section-portfolio-item {
-  @apply py-10 px-5
+  @apply py-10 px-5;
 }
 
 @screen md {
@@ -32,3 +32,14 @@
   }
 }
 
+form {
+  
+}
+
+form p {
+  @apply mb-5;
+}
+
+input, textarea {
+  @apply block w-full border border-gray-700 px-2 py-2;
+}
