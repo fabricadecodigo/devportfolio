@@ -3,7 +3,9 @@ import Section from './section';
 
 export default () =>
     <Section id="contact" title="Contato" className="bg-gray-100">
-        <form name="contact" data-netlify="true">
+        <form name="contact" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+
             <p>
                 <label>Name <input type="text" name="name" /></label>
             </p>
