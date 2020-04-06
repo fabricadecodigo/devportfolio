@@ -63,7 +63,14 @@ module.exports = {
         ASP.NET Soap web service, SQL Server, Windows Mobile e Android.</p>`
       }
     ],
-    projects: [],
+    skills: [
+      { name: 'Html', progress: 100 },
+      { name: 'CSS', progress: 90 },
+      { name: 'JavaScript', progress: 100 },
+      { name: '.Net', progress: 100 },
+      { name: 'Node JS', progress: 50 },
+      { name: 'Ionic Framework', progress: 90 }
+    ],
     footerText: 'Fábrica de Código',
     homePage: {
       title: 'Página Inicial',
