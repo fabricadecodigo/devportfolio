@@ -4,6 +4,8 @@ import Section from './section';
 export default () =>
     <Section id="contact" title="Contato" className="bg-gray-100">
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            
             <p className="hidden">
                 <label>Não preencha isso se você for humano: <input name="bot-field" /></label>
             </p>
