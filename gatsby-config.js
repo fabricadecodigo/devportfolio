@@ -21,7 +21,7 @@ module.exports = {
         },
         {
           name: 'youtube',
-          link: 'http://youtube.com.br/fabricadecodigo'
+          link: 'https://youtube.com.br/fabricadecodigo'
         },
         {
           name: 'linkedin',
