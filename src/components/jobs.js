@@ -22,7 +22,7 @@ const Jobs = () => {
     }
   `)
     return (
-        <Section id="sobre" title="Experiências profissionais">
+        <Section id="experiences" title="Experiências profissionais">
             <div className="relative my-5">
                 <div className={styles.timeline}></div>
                 {
